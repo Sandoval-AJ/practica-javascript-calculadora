@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --color1:#2f3542;
+    --color2:#ff7f50;
+    --color3:#ff6b81;
+    --color4:#70a1ff;
+    --color5:#377cfc;
+    --color6:#7bed9f;
+    --color7:#3742fa;
+    --color8:#a4b0be;
+    --color9:#ffffff;
+
+}
+body{
+    background-color: var(--color9);
+}
+.classContainer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+.classCalculadora{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 15px;
+    margin: 10rem auto;
+    background-color: var(--color1);
+    /*grid*/
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem 4rem;
+    grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    justify-content: center;
+    padding: 1rem;
+
+}
+#cajaSuma{
+    grid-column: 4/5;
+    grid-row:3/6;
+}
+#cajaResultado{
+    grid-column: 1/5;
+    background-color: var(--color9);
+    cursor: text;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1rem;
+}
+#caja0{
+    background-color: var(--color2);
+    grid-column: 1/4;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--color4);
+}
