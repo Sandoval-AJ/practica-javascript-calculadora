@@ -53,6 +53,8 @@ body{
     justify-content: flex-start;
     align-items: flex-end;
     padding: 1rem;
+    border-radius: 10px;
+    font-size: 35px;
 }
 #caja0{
     background-color: var(--color2);
@@ -65,4 +67,10 @@ body{
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--color4);
+}
+.botones:hover {
+    transition: .2s;
+    background-color: var(--color3);
+    box-shadow: 0 0 15px var(--color9);
+    border: solid 3px var(--color9);
 }
